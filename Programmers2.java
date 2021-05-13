@@ -1,6 +1,9 @@
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
+// 프로그래머스
+// 내적
+
 class Programmers2{
     public static void main(String[] args){
         int[] a = {1,2,3,4};
