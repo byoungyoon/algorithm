@@ -1,9 +1,12 @@
 package backtracking;
 
+// 프로그래머스
+// N-Queen
+
 public class backtracking1 {
     static int answer = 0;
     public static void main(String[] args){
-        int n = 4;
+        int n = 12;
         
         boolean[][] visited = new boolean[n][n];
         backtracking(visited, 0, n);
@@ -13,20 +16,6 @@ public class backtracking1 {
 
     static void backtracking(boolean[][] visited, int depth, int n){
         if(depth == n){
-            for(int i=0; i<n; i++){
-                for(int j=0; j<n; j++){
-                    if(visited[i][j]){
-                        for(int a=0; a<n; a++){
-                            // if(visited[a][j] && a != i) return;
-                            // if(visited[i][a] && a != j) return;
-                            // if(a != 0 && i-a >= 0 && j-a >= 0 && visited[i-a][j-a]) return;
-                            // if(a != 0 && i+a < n && j+a < n && visited[i+a][j+a]) return;
-                            // if(a != 0 && i+a < n && j-a >= 0 && visited[i+a][j-a]) return;
-                            // if(a != 0 && i-a >= 0 && j+a < n && visited[i-a][j+a]) return;
-                        }
-                    }
-                }
-            }
             answer++;
             return;
         }
@@ -39,12 +28,16 @@ public class backtracking1 {
     }
 
     static boolean filter(boolean[][] visited, int depth, int i, int n){
-        for(int a=0; a<depth; a++){
-            if(visited[a][i]) return false;
-            if(a != 0 && depth-a >= 0 && i-a >= 0 && visited[depth-a][i-a]) return false;
-            if(a != 0 && depth+a < n && i+a < n && visited[depth+a][i+a]) return false;
-            if(a != 0 && depth+a < n && i-a >= 0 && visited[depth+a][i-a]) return false;
-            if(a != 0 && depth-a >= 0 && i+a < n && visited[depth-a][i+a]) return false;
+        for(int a=0; a<n; a++){
+            if(a != depth){
+                if(visited[a][i]) return false;
+            }
+            if(a != 0){
+                if(depth-a >= 0 && i-a >= 0 && visited[depth-a][i-a]) return false;
+                if(depth+a < n && i+a < n && visited[depth+a][i+a]) return false;
+                if(depth+a < n && i-a >= 0 && visited[depth+a][i-a]) return false;
+                if(depth-a >= 0 && i+a < n && visited[depth-a][i+a]) return false;
+            }
         }
         return true;
     }
