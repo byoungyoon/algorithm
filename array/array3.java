@@ -1,3 +1,4 @@
+package array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 // 프로그래머스
 // 모의고사
 
-public class Programmers5 {
+public class array3 {
     public static void main(String[] args){
         int[] answers = {1, 2, 5, 5, 2};
 
@@ -32,6 +33,7 @@ public class Programmers5 {
     }
     
     static int calculation(int[] answers, int[] method){
+        
         AtomicInteger index = new AtomicInteger();
         return Arrays.stream(answers).map(data-> method[index.getAndIncrement()%method.length] == data? 1:0).sum();
     }

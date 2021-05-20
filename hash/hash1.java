@@ -1,3 +1,4 @@
+package hash;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Collectors;
@@ -5,7 +6,7 @@ import java.util.stream.Collectors;
 // 프로그래머스
 // 로또의 최고 순위와 최저 순위
 
-class Programmers1{
+class hash1{
     public static void main(String[] args){
         int[] lottos = {45, 4, 35, 20, 3, 9};
         int[] win_nums = {20, 9, 3, 45, 4, 35};
