@@ -1,10 +1,11 @@
+package backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
 // 프로그래머스
 // 소수 만들기
 
-public class Programmers3 {
+public class backtracking2 {
     public static void main(String[] args){
         int[] nums = {1,2,3,4};
         
