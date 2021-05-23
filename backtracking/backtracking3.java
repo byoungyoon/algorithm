@@ -1,10 +1,10 @@
-package test;
-
+package backtracking;
 import java.util.LinkedList;
 import java.util.Queue;
-import test.Visited;
 
-public class Testq {
+// 프로그래머스
+
+public class backtracking3 {
   static int answer = 0;
   public static void main(String[] args) {
     String begin = "hit";
