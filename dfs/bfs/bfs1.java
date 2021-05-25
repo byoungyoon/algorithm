@@ -1,10 +1,11 @@
-package backtracking;
+package dfs.bfs;
 import java.util.LinkedList;
 import java.util.Queue;
 
 // 프로그래머스
+// 단어변환
 
-public class backtracking3 {
+public class bfs1 {
   static int answer = 0;
   public static void main(String[] args) {
     String begin = "hit";
@@ -23,6 +24,7 @@ public class backtracking3 {
   }
   
   static void bfs(Queue<Visited> q, String[] words, String target){
+    if(q.isEmpty()) return;
     Visited visited2 = q.poll();
     String value = visited2.getValue();
     boolean[] check = visited2.getCheck();
@@ -36,8 +38,8 @@ public class backtracking3 {
           same = same + 1;
         }
       }
-      if(same == 2){
-        check[i] = true;{}
+      if(same == target.length()-1){
+        check[i] = true;
         q.offer(new Visited(words[i], check, count+1));
       }
     }
