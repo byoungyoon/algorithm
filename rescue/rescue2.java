@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 프로그래머스
 // 시저암호
 
-public class resuce2 {
+public class rescue2 {
     public static void main(String[] args){
         String s = "a b  ";
         int n = 25;

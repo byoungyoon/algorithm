@@ -3,7 +3,7 @@ package rescue;
 // 프로그래머스
 // 문자열 압축
 
-public class resuce3{
+public class rescue3{
     public static void main(String[] args){
         String s = "xxxxxxxxxxqwertyuiopasdfghjkkkkkkkkkk";
         int answer = Integer.MAX_VALUE;
