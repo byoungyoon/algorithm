@@ -1,0 +1,273 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentMidExam",
+            "request": "launch",
+            "mainClass": "StudentMidExam",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test2",
+            "request": "launch",
+            "mainClass": "Test2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test3",
+            "request": "launch",
+            "mainClass": "Test3",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test4",
+            "request": "launch",
+            "mainClass": "Test4",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test5",
+            "request": "launch",
+            "mainClass": "Test5",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array1",
+            "request": "launch",
+            "mainClass": "array.array1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array2",
+            "request": "launch",
+            "mainClass": "array.array2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array3",
+            "request": "launch",
+            "mainClass": "array.array3",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array4",
+            "request": "launch",
+            "mainClass": "array.array4",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array5",
+            "request": "launch",
+            "mainClass": "array.array5",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array6",
+            "request": "launch",
+            "mainClass": "array.array6",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch array7",
+            "request": "launch",
+            "mainClass": "array.array7",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch backtracking1",
+            "request": "launch",
+            "mainClass": "backtracking.backtracking1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch backtracking2",
+            "request": "launch",
+            "mainClass": "backtracking.backtracking2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch backtracking3",
+            "request": "launch",
+            "mainClass": "backtracking.backtracking3",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch backtracking4",
+            "request": "launch",
+            "mainClass": "backtracking.backtracking4",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic1",
+            "request": "launch",
+            "mainClass": "basic.basic1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic10",
+            "request": "launch",
+            "mainClass": "basic.basic10",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic11",
+            "request": "launch",
+            "mainClass": "basic.basic11",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic13",
+            "request": "launch",
+            "mainClass": "basic.basic13",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic14",
+            "request": "launch",
+            "mainClass": "basic.basic14",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic2",
+            "request": "launch",
+            "mainClass": "basic.basic2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic3",
+            "request": "launch",
+            "mainClass": "basic.basic3",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic4",
+            "request": "launch",
+            "mainClass": "basic.basic4",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic5",
+            "request": "launch",
+            "mainClass": "basic.basic5",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic6",
+            "request": "launch",
+            "mainClass": "basic.basic6",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic7",
+            "request": "launch",
+            "mainClass": "basic.basic7",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic8",
+            "request": "launch",
+            "mainClass": "basic.basic8",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch basic9",
+            "request": "launch",
+            "mainClass": "basic.basic9",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch bfs1",
+            "request": "launch",
+            "mainClass": "dfs.bfs.bfs1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch bfs2",
+            "request": "launch",
+            "mainClass": "dfs.bfs.bfs2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch hash1",
+            "request": "launch",
+            "mainClass": "hash.hash1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch hash2",
+            "request": "launch",
+            "mainClass": "hash.hash2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch rescue1",
+            "request": "launch",
+            "mainClass": "rescue.rescue1",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch rescue2",
+            "request": "launch",
+            "mainClass": "rescue.rescue2",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch rescue3",
+            "request": "launch",
+            "mainClass": "rescue.rescue3",
+            "projectName": "test_4071940a"
+        },
+        {
+            "type": "java",
+            "name": "Launch rescue4",
+            "request": "launch",
+            "mainClass": "rescue.rescue4",
+            "projectName": "test_4071940a"
+        }
+    ]
+}
