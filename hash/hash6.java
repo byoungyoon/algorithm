@@ -1,4 +1,4 @@
-package rescue;
+package hash;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 // 프로그래머스
 // [3차] 파일명 정렬
 
-public class rescue11 {
+public class hash6 {
     public static void main(String[] args){
         String[] files = {"img000012345", "img1.png","img2","IMG02"};
 
