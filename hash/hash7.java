@@ -5,7 +5,7 @@ import java.util.HashMap;
 // 프로그래머스
 // 전화번호 목록
 
-public class Test7 {
+public class hash7 {
     public static void main(String[] args){
         String[] phone_book = {"119", "97674223", "1195524421"};
         
