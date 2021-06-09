@@ -44,7 +44,6 @@ public class quest1 {
             int score = Integer.parseInt(querySplit[4]);
             
             List<Integer> list = infos.getOrDefault(key, empty);
-            System.out.println(list);
 
             int s = 0;
             int e = list.size();
