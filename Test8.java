@@ -1,30 +1,30 @@
-import java.util.Arrays;
 
 public class Test8 {
     public static void main(String[] args){
-        String play_time = "02:03:55";
-        String adv_time = "00:14:15";
-        String[] logs = {"01:20:15-01:45:14", "00:40:31-01:00:00", "00:25:50-00:48:29", "01:30:59-01:53:29", "01:37:44-02:02:30"};
+        String play_time = "99:59:59";
+        String adv_time = "25:00:00";
+        String[] logs = {"69:59:59-89:59:59", "01:00:00-21:00:00", "79:59:59-99:59:59", "11:00:00-31:00:00"};
 
-        int playSecond = getSecond(play_time);
-        int advSecond = getSecond(adv_time);
+        long playSecond = getSecond(play_time);
+        long advSecond = getSecond(adv_time);
 
-        int[] result = new int[playSecond];
+        int[] result = new int[(int)playSecond];
 
         for(String log: logs){
             String[] value = log.split("-");
             int startSecond = getSecond(value[0]);
             int endSecond = getSecond(value[1]);
 
-            for(int i=startSecond; i<endSecond; i++){
+            for(int i=(int)startSecond; i<endSecond; i++){
                 result[i] += 1;
             }
         }
 
-        int sum = 0;
+        long sum = 0;
         int answer = 0;
 
-        for(int i=0; i<playSecond-advSecond; i++){
+
+        for(int i=0; i<=playSecond-advSecond; i++){
             int count = 0;
             for(int j=i; j<advSecond+i; j++){
                 count += result[j];
@@ -39,25 +39,9 @@ public class Test8 {
         int min = answer / 60 % 60;
         int second = answer % 60;
 
-        String time = "";
-
-        time = time + hour;
-        if(hour < 10){
-            time = "0" + time;
-        }
-        time = time + ":";
-        
-        time = time + min;
-        if(min < 10){
-            time = "0" + time;
-        }
-        time = time + ":";
-
-        time = time + second;
-        if(second < 10){
-            time = "0" + time;
-        }
-        time = time + ":";
+        String time = hour<10?"0"+hour+":":hour+":";
+        time += min<10?"0"+min+":":min+":";
+        time += second<10?"0"+second:second;
 
         System.out.println(time);
     }
