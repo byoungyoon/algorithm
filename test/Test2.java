@@ -1,42 +1,27 @@
+package test;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
-class Student{
-    private String name;
-    private int year;
-    private String dept;
-    Student(){}
-
-    public Student(String name, int year, String dept) {
-        this.name = name;
-        this.year = year;
-        this.dept = dept;
-    }
-
-    public String getDept() {
-        return this.dept;
-    }
-    public int getYear() {
-        return this.year;
-    }
-
-}
-
-class StudentMidExam {
+class Test2 {
 
     static int ssu;
     static Student[] data;
     static Scanner sc = new Scanner(System.in);
-    static char max;
 
-    static void maxYear(String years, Long min, int current){
-        if(current == years.length()) return;
-        Long count = Arrays.stream(years.replaceAll("[" + years.charAt(current) + "]", "").split("")).count();
-        if(min > count){
-            min = count;
-            max = years.charAt(current);
+    static int maxYear(){
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for(Student s: data){
+            hm.put(s.getYear(), hm.getOrDefault(s.getYear(), 0)+1);
         }
-        maxYear(years, min, current+1);
+
+        int output = 0;
+
+        for(Integer key: hm.keySet()){
+            if(hm.get(key) > output){
+                output = key;
+            }
+        }
+        return output;
     }
 
     public static int findStudentSu(String deptName) {
@@ -70,7 +55,7 @@ class StudentMidExam {
         name = sc.nextLine();
         su = findStudentSu(name);
         System.out.println(name + "과 소속의 학생은 " + su +"명 입니다.");
-        maxYear(Arrays.stream(data).map(data->data.getYear()).map(Object::toString).collect(Collectors.joining()), 9999L, 0);
-        System.out.println("가장 많은 학생의 수는 " + max + "학년입니다");
+        int answer = maxYear();
+        System.out.println("가장 많은 학생의 수는 " + answer + "학년입니다");
     }
 }
