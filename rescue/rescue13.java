@@ -2,6 +2,7 @@ package rescue;
 
 // 프로그래머스
 // 기지국 설치
+// https://programmers.co.kr/learn/courses/30/lessons/12979?language=java
 
 public class rescue13 {
     public static void main(String[] args){
