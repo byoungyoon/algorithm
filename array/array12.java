@@ -1,25 +1,36 @@
 package array;
 
-import java.util.Arrays;
-
 // 프로그래머스
-// 단속카메라
-// https://programmers.co.kr/learn/courses/30/lessons/42884
+// 가장 긴 팰린드롬
+// https://programmers.co.kr/learn/courses/30/lessons/12904
 
 public class array12 {
     public static void main(String[] args){
-        int[][] routes = {{-20,15}, {-14,-5}, {-18,-13}, {-5,-3}};
+        String s = "abacde";
 
-        Arrays.sort(routes, (a,b)-> Integer.compare(a[1], b[1]));
+        int answer = 1;
 
-        int answer = 0;
+        int count = s.length();
+        while(count != 1){
+            for(int i=0; i<=s.length()-count; i++){
+                int size = count / 2;
+                boolean same = true;
+                for(int j=0; j<size; j++){
+                    if(s.charAt(i+j) != s.charAt(i+count-j-1)){
+                        same = false;
+                        break;
+                    }
+                }
 
-        int min = -30001;
-        for(int[] route: routes){
-            if(min < route[0]){
-                min = route[1];
-                answer = answer + 1;
+                if(same){
+                    answer = count;
+                    break;
+                }
             }
+
+            if(answer != 1) break;
+
+            count = count - 1;
         }
 
         System.out.println(answer);
