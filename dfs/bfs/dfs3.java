@@ -1,11 +1,13 @@
-public class Test12 {
+package dfs.bfs;
+
+public class Dfs3 {
     static int answer = 0;
 
     public static void main(String[] args) {
         int[] numbers = { 1, 2, 1, 2 };
         int target = 2;
 
-        Test12 test = new Test12();
+        Dfs3 test = new Dfs3();
         System.out.println(test.solution(numbers, target));
     }
 
