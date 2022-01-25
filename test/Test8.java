@@ -1,3 +1,5 @@
+package test;
+
 public class Test8 {
     public static void main(String[] args) {
         // 앞에 값
