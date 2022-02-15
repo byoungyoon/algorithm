@@ -1,14 +1,11 @@
-package timeout;
+package backtracking;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
-public class Test5 {
+public class Backtracking7 {
     static List<String[]> list = new ArrayList<>();
     static int answer = 0;
 
@@ -16,8 +13,8 @@ public class Test5 {
         String[] user_id = { "frodo", "fradi", "crodo", "abc123", "frodoc" };
         String[] banned_id = { "*rodo", "*rodo", "******" };
 
-        Test5 test = new Test5();
-        System.out.println(test.solution(user_id, banned_id));
+        Backtracking7 backtracking = new Backtracking7();
+        System.out.println(backtracking.solution(user_id, banned_id));
     }
 
     private int solution(String[] user_id, String[] banned_id) {
