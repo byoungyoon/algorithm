@@ -1,4 +1,6 @@
-public class Test {
+package rescue;
+
+public class Rescue26 {
     private int[][] board;
     private int len;
 
@@ -6,8 +8,8 @@ public class Test {
         int[][] board = { { 0, 0, 1, 1, 1 }, { 0, 0, 0, 1, 0 }, { 3, 0, 0, 2, 0 }, { 3, 2, 2, 2, 0 },
                 { 3, 3, 0, 0, 0 } };
 
-        Test test = new Test();
-        System.out.println(test.solution(board));
+        Rescue26 rescue = new Rescue26();
+        System.out.println(rescue.solution(board));
     }
 
     private int solution(int[][] board) {
