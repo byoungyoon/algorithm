@@ -9,8 +9,8 @@ public class Basic12 {
         int n = 3;
         int m = 12;
 
-        Basic12 test = new Basic12();
-        System.out.println(Arrays.toString(test.solution(n, m)));
+        Basic12 basic = new Basic12();
+        System.out.println(Arrays.toString(basic.solution(n, m)));
     }
 
     public int[] solution(int n, int m) {
