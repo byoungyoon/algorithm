@@ -10,8 +10,8 @@ public class Heap3 {
         int[] scoville = { 1, 2, 3, 9, 10, 12 };
         int K = 7;
 
-        Heap3 test = new Heap3();
-        System.out.println(test.solution(scoville, K));
+        Heap3 heap = new Heap3();
+        System.out.println(heap.solution(scoville, K));
     }
 
     static Queue<Integer> q = new PriorityQueue<>();
