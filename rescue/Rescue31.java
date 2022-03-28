@@ -36,22 +36,14 @@ public class Rescue31 {
             return str;
         }
 
-        if (!type) {
-            if (len != 5) {
-                str += "A";
-            } else {
-                if (str.endsWith("U")) {
-                    str = nextStr(str.substring(0, len - 1), true);
-                } else {
-                    str = str.substring(0, len - 1) + en.get(en.indexOf(str.charAt(len - 1) + "") + 1);
-                }
-            }
+        if (!type && len != 5) {
+            return str += "A";
+        }
+
+        if (str.endsWith("U")) {
+            str = nextStr(str.substring(0, len - 1), true);
         } else {
-            if (str.endsWith("U")) {
-                str = nextStr(str.substring(0, len - 1), true);
-            } else {
-                str = str.substring(0, len - 1) + en.get(en.indexOf(str.charAt(len - 1) + "") + 1);
-            }
+            str = str.substring(0, len - 1) + en.get(en.indexOf(str.charAt(len - 1) + "") + 1);
         }
 
         return str;
