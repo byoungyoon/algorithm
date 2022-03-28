@@ -32,9 +32,6 @@ public class Rescue31 {
         // 전체가 5일때 끝 자리 U일경우 그 자리 사라지고 올림
         // 전체가 5이고 끝 자리가 U가 아닐 경우 그 자리 다음 문자
         int len = str.length();
-        if (len == 0) {
-            return str;
-        }
 
         if (!type && len != 5) {
             return str += "A";
