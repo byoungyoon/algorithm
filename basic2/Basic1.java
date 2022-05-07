@@ -30,5 +30,6 @@ public class Basic1 {
         }
 
         System.out.println(result);
+        sc.close();
     }
 }

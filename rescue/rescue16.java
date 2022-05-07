@@ -52,5 +52,7 @@ public class rescue16 {
 
         System.out.println(answer);
 
+        sc.close();
+
     }
 }

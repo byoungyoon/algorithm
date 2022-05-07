@@ -9,11 +9,11 @@ import java.util.List;
 
 public class dp1 {
     public static void main(String[] args){
-        String expression = "2*3-4*5";
+        // String expression = "2*3-4*5";
 
-        List<Integer>[][] dp = new ArrayList[expression.length()+1][expression.length()+1];
+        // List<Integer>[][] dp = new ArrayList[expression.length()+1][expression.length()+1];
 
-        System.out.println(findDifferentWaysToCompute(expression, 0, expression.length(), dp));
+        // System.out.println(findDifferentWaysToCompute(expression, 0, expression.length(), dp));
     }
 
     static List<Integer> findDifferentWaysToCompute(String expression, int start, int end, List<Integer>[][] dp){

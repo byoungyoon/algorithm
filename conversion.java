@@ -7,5 +7,7 @@ public class conversion {
         String value = sc.nextLine();
         value = value.replaceAll("[\\[]", "{").replaceAll("[\\]]", "}");
         System.out.println(value);
+
+        sc.close();
     }
 }

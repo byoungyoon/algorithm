@@ -13,5 +13,7 @@ public class basic11{
             answer += value[i%2];
         }
 
+        System.out.println(answer);
+
     }
 }

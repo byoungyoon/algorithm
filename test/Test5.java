@@ -18,6 +18,7 @@ public class Test5 {
         dp(value, 0, value[1], 1);
 
         System.out.println(answer);
+        sc.close();
     }
 
     static void dp(int[] value, int count, int sum, int index) {

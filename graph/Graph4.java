@@ -46,7 +46,7 @@ public class Graph4 {
             return "현재 노트 번호 : " + this.to + ", 가중치 : " + this.weight + ", 상태 : " + status;
         }
     }
-
+    @SuppressWarnings("unchecked")
     public int solution(int n, int start, int end, int[][] roads, int[] traps) {
         List<Edge>[] adj = new ArrayList[n + 1];
         for (int i = 1; i < n + 1; i++) {

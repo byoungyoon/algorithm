@@ -20,5 +20,7 @@ public class basic27 {
         for(int i=n-5; i<n; i++){
             System.out.print(ch[i]);
         }
+
+        sc.close();
     }
 }

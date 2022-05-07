@@ -4,7 +4,7 @@ public class Test6 {
     public static void main(String[] args) {
         int[] money = { 90, 0, 0, 95, 1, 1 };
 
-        int answer = 0;
+        // int answer = 0;
         int[] type1 = new int[money.length];
         int[] type2 = new int[money.length];
 

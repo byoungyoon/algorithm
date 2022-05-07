@@ -19,5 +19,7 @@ public class Test7 {
                 System.out.println(s.substring(0, 9) + "......" + s.substring(s.length() - 10, s.length()));
             }
         }
+
+        sc.close();
     }
 }

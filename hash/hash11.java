@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class hash11 {
     static Map<Long, Long> hm = new HashMap<>();
     public static void main(String[] args){
-        long k = 10;
+        // long k = 10;
         long[] room_number = {1,3,4,1,3,1};
 
         long[] answer = new long[room_number.length];

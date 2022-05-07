@@ -16,5 +16,7 @@ public class basic1 {
             }
             System.out.println();
         }
+
+        sc.close();
     }
 }
